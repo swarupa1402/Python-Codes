@@ -1,0 +1,28 @@
+name: ttp_env1
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11
+  - pip
+
+  - pip:
+      # Core
+      - numpy==1.26.4
+      - pandas==2.2.2
+
+      # Visualization
+      - matplotlib==3.9.0
+      - seaborn==0.13.2
+
+      # Notebook Tools (stable combo)
+      - jupyterlab==3.6.7
+      - notebook==6.4.12
+      - ipywidgets==8.1.3
+      - jupyter_server==1.24.0
+      - traitlets==5.9.0
+
+      # Optional (for later classes)
+      - plotly==6.0.0
+      - yfinance==0.2.66
